@@ -2,11 +2,12 @@
 
 import Pagina from "../components/Pagina";
 
-export default function Array() {
+export default function Objetos() {
   const carros = ["corsa", "Celta", "Ferrari", "Fusca", "Cobalt"];
+  const carro = { marca: "GM", modelo: "Corsa", cor: "Rosa" };
 
   return (
-    <Pagina titulo="Página de array">
+    <Pagina titulo="Objetos">
       {carros.map((item) => (
         <p>{item}</p>
       ))}
